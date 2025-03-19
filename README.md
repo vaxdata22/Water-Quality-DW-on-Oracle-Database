@@ -1,11 +1,11 @@
 # Water-Quality-DW-on-Oracle-Database
-This is an Oracle DB Data Warehouse and ETL implementation on specially formatted Water Quality dataset from DEFRA, UK
+This is an Oracle DB Data Warehouse and manual ETL demo on specially formatted Water Quality dataset from DEFRA, UK. It is a personal academic-grade exercise to explore the basic concepts of data warehousing and manual ETL process from an academic perspective.
 
 ## Introduction:
 
 A data warehouse is a central repository of information that can be analyzed to make more informed decisions. Data flows into a data warehouse from transactional systems, relational databases, and other sources, typically on a regular cadence (https://aws.amazon.com/what-is/data-warehouse).
 
-This repository is about a data warehouse project that was carried out using ETL (extract, transform, and load) process on a [specially formatted WaterQuality dataset](https://github.com/vaxdata22/Water-Quality-DW-on-Oracle-Database/blob/main/WaterQuality.accdb) from The Department for Environment Food & Rural Affairs (DEFRA), UK. The particular dataset used for this project is provided in an MS Access (.accdb) file. It contains 17 tables, and each would have to be exported into individual CSV files.
+This repository is about a data warehouse project that was carried out using a manually triggered ETL (extract, transform, and load) process on a [specially formatted WaterQuality dataset](https://github.com/vaxdata22/Water-Quality-DW-on-Oracle-Database/blob/main/WaterQuality.accdb) from The Department for Environment Food & Rural Affairs (DEFRA), UK. The particular dataset used for this project is provided in an MS Access (.accdb) file. It contains 17 tables, and each would have to be exported into individual CSV files.
 
 The data warehouse consists of a staging table, six (6) dimension tables, and one fact table. Among the dimension tables is a Time table to aid time-based BI analysis. The data warehouse was implemented on Oracle Database 21c infrastructure with the source dataset exported into CSV files then imported into a raw table in the database; while the transform phase which involved data exploration and cleaning as well as the load phase was done using the Jupyter Notebook Python environment connected to the database.. 
 
